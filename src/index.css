@@ -1,51 +1,63 @@
+:root {
+    --primary-color: #192a51;
+    --secondary-color: #967AA1;
+    --text-color: #F5E6E8;
+    --complemntary-color: #AAA1C8;
+}
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
 }
 
 ol,
 ul {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
 .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+    clear: both;
+    content: "";
+    display: table;
 }
 
 .status {
-  margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2rem;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    color: var(--complemntary-color);
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
 }
 
 .square:focus {
-  outline: none;
+    outline: none;
 }
 
 .kbd-navigation .square:focus {
-  background: #ddd;
+    background: var(--text-color);
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .game-info {
-  margin-left: 20px;
+    margin-left: 20px;
 }
