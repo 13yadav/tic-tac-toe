@@ -2,7 +2,7 @@
     --primary-color: #192a51;
     --secondary-color: #967AA1;
     --text-color: #F5E6E8;
-    --complemntary-color: #AAA1C8;
+    --complementary-color: #AAA1C8;
 }
 
 body {
@@ -32,7 +32,7 @@ ul {
     background: var(--primary-color);
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
-    color: var(--complemntary-color);
+    color: var(--complementary-color);
     float: left;
     font-size: 60px;
     font-weight: bold;
@@ -60,4 +60,33 @@ ul {
 
 .game-info {
     margin-left: 20px;
+}
+
+.game-info ol {
+    list-style: none;
+}
+
+.btn {
+    font-size: 1.2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--complementary-color);
+    color: var(--primary-color);
+
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
 }
